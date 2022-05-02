@@ -65,13 +65,4 @@ class CreateDb
         }
     }
 
-
-   /* public function stockDec(){
-       
-        $sql = "UPDATE producttb SET product_stock = product_stock - 1 WHERE `id`= 2";
-        $result=mysqli_query($this->con,$sql);
-      
-    } 
-   */
-
 }
