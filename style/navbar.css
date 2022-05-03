@@ -109,11 +109,11 @@
 }
 
 #people-link:hover ~ #drop-down {
-    height: 190px;
+    height: 520px;
 }
 
 #drop-down:hover {
-    height: 190px;
+    height: 520px;
 }
 
 /* -------- Bottom Nav -------- */

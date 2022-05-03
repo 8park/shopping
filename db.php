@@ -31,7 +31,6 @@ class CreateDb
         }
 
         $sql = "CREATE DATABASE IF NOT EXISTS $dbname";
-
         if(mysqli_query($this->con, $sql)){
 
             $this->con = mysqli_connect($servername, $username, $password, $dbname);
@@ -48,9 +47,31 @@ class CreateDb
                 echo "Error creating table : " . mysqli_error($this->con);
             }
 
+            $sql = "CREATE TABLE `servicestb` (
+                `id` int NOT NULL,
+                `services_name` varchar(25) NOT NULL,
+                `services_price` float DEFAULT NULL,
+                `services_image` varchar(100) DEFAULT NULL,
+                `services_available` int DEFAULT NULL,
+                `active` int DEFAULT NULL
+                );";
+             if (!mysqli_query($this->con, $sql)){
+                echo "Error creating table : " . mysqli_error($this->con);
+            }
+            $sql = "CREATE TABLE `workerstb` (
+                `worker_id` int NOT NULL,
+                `worker_name` varchar(10) COLLATE utf8mb4_general_ci DEFAULT NULL,
+                `worker_img` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci DEFAULT NULL,
+                `appointment_date` date DEFAULT NULL,
+                `service_location` varchar(10) COLLATE utf8mb4_general_ci NOT NULL,
+                `service_quality` int DEFAULT NULL,
+                `worker_active` int NOT NULL
+              ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;";
+                            
         }else{
             return false;
         }
+       
     }
 
     public function getData(){
