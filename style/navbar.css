@@ -60,7 +60,7 @@
 
 #drop-down {
     height: 0;
-    z-index: 15;
+    z-index: 30;
     overflow: hidden;
     position: absolute;
     margin-top: 6px;

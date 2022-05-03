@@ -13,7 +13,7 @@ class CreateDb
     public function __construct(
         $dbname = "Shopping6333",
         $tablename = "customertb",
-        $servername = "https://west1-phpmyadmin.dreamhost.com/",
+        $servername = "mysql.junpar21.dreamhosters.com",
         $username = "shopping6333",
         $password = "123456789"
     )
