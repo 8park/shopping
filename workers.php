@@ -69,9 +69,12 @@ error_reporting(E_ALL);
                   </li>
                   <li class="nav-item">
                       <a class="nav-link" href="staff.html">Staff</a>
-                  </li>
-                </ul>
-            </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="signup.php">Login</a>
+              </li>
+            </ul>
+          </div>
         </nav>
         <span id="Cleaing-Edinburg" type="hidden"></span>
         <div class="pg-title">
