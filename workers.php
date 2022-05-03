@@ -213,10 +213,7 @@ error_reporting(E_ALL);
                         <h5>William</h5>
                         <p><strong>Cleaner</strong></p>
                         <div class="member-info-align">
-                            <p><strong>Cleaner</strong></p>
-                            <p><strong>Qie Company</strong></p>
-                            <p>4837 Q 34th Te</p>
-                            <p>Edinburg, TX 78490</p>
+
                         </div>
                         <div class="member-email">
                             <a href="mailto:angel.peredo01@utrgv.edu" target="_top">Email Angel Peredo</a>
@@ -227,6 +224,12 @@ error_reporting(E_ALL);
             </div>
         </div>
     -->
+
+    <div data-aos="zoom-in-up" class="member">
+
+
+
+    </div>
 
      <?php
         $result = $dbname->getData();
