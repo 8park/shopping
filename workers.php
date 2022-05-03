@@ -47,8 +47,8 @@ error_reporting(E_ALL);
                   <li class="nav-item">
                       <a class="nav-link" href="allservice.html" id="current">All Services</a>
                   </li>
-                    <li class="nav-item">
-                      <a id="people-link" class="nav-link" href="workers.php">workers</a>
+                  <li class="nav-item">
+                      <a id="people-link" class="nav-link" href="workers.html">workers</a>
                       <div id="drop-down">
                           <a class="nav-link" href="workers.php#Cleaing-Edinburg">Cleaing - Edinburg</a>
                           <a class="nav-link" href="workers.php#Cleaning-Pharr">Cleaning - Pharr</a>
@@ -75,17 +75,14 @@ error_reporting(E_ALL);
         </nav>
         <span id="Cleaing-Edinburg" type="hidden"></span>
         <div class="pg-title">
-
-
             <h2 class="display-4"> Cleaning - Edinburg </h2>
-
         </div> 
 
                 
      <?php
         $result = $dbname->getData();
         while($row = mysqli_fetch_assoc($result)){
-            if($row['service_location'] == 'edinburg'){
+            if($row['service_location'] == 'edinburg' && $row['service_type'] == 'cleaning'){
             workerslist($row['worker_id'], $row['worker_name'], $row['worker_email'], $row['service_type'], $row['worker_img'], $row['appointment_date'], $row['service_location'], $row['service_quality'], $row['worker_active']);  
         }
     }
@@ -97,121 +94,14 @@ error_reporting(E_ALL);
             <h2 class="display-4"> Cleaning - Pharr </h2>
         </div>
 
-        <div class="people">
-
-            <div id="collab" class="group">
-
-                <div id=13 data-aos="zoom-in-up" class="member">
-                    <img src="images/people/9.jpg" />
-                    <div class="member-info">
-                        <h5>David</h5>
-                        <p><strong>Best Cleaner</strong></p>
-                        <div class="member-info-align">
-                            <p><strong>Dainel Company</strong></p>
-                            <p>5834 U 25th Te</p>
-                            <p>Edinburg, TX 78132</p>
-                        </div>
-                        <div class="member-email">
-                            <a href="mailto:zhixiang.chen@utrgv.edu" target="_top">Email Dr. Zhixiang Chen</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div id=15 data-aos="zoom-in-up" class="member">
-                    <img src="images/people/10.jpg" />
-                    <div class="member-info">
-                        <h5>Richard</h5>
-                        <p><strong>Cleaner</strong></p>
-                        <div class="member-info-align">
-                            <p><strong>Padding Company</strong></p>
-                            <p>508 N Cage Blvd</p>
-                            <p>Pharr, TX 78577</p>
-                        </div>
-                        <div class="member-email">
-                            <a href="mailto:mark.chu@utrgv.edu" target="_top">Email Dr. Mark Chu</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div id=14 data-aos="zoom-in-up" class="member">
-                    <img src="images/people/11.jpg" />
-                    <div class="member-info">
-                        <h5>Joseph</h5>
-                        <p><strong>Cleanerr</strong></p>
-                        <div class="member-info-align">
-                            <p><strong>Edu Company</strong></p>
-                            <p>806 S Cage Blvd</p>
-                            <p>Pharr, TX 78577</p>
-                        </div>
-                        <div class="member-email">
-                            <a href="mailto:jungseok.ho@utrgv.edu" target="_top">Email Dr. Jungsoek Ho</a>
-                        </div>
-                    </div>
-                </div>
-
-
-            </div>
-        </div>
-
-        <span id="Cleaning-Mcallen" type="hidden"></span>
-        <div class="pg-title sub-title">
-            <h2 class="display-4"> Cleaning - Mc allen </h2>
-        </div>
-
-        <div class="people">
-
-            <div id="faculty" class="group">
-
-                <div id=17 data-aos="zoom-in-up" class="member">
-                    <img src="images/people/12.jpg" />
-                    <div class="member-info">
-                        <h7>Thomas</h7>
-                        <p><strong>Best Cleaner</strong></p>
-                        <div class="member-info-align">
-                            <p><strong>Coe Comany</strong></p>
-                              <p>2101 N Ware Rd</p>
-                              <p>McAllen, TX 78501</p>
-                        </div>
-                        <div class="member-email">
-                            <a href="mailto:carlos.penacaballero01@utrgv.edu" target="_top">Email Carlos Pena</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div id=20 data-aos="zoom-in-up" class="member">
-                    <img src="images/people/13.jpg" />
-                    <div class="member-info">
-                        <h5>Charles</h5>
-                        <p><strong>Cleaner</strong></p>
-                        <div class="member-info-align">
-                            <p><strong>Deo</strong></p>
-                             <p>201 N Bentsen Rd</p>
-                             <p>McAllen, TX 78501</p>
-                        </div>
-                        <div class="member-email">
-                            <a href="mailto:erik.enriquez01@utrgv.edu" target="_top">Email Dr. Erik Enriquez</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div id=16 data-aos="zoom-in-up" class="member">
-                    <img src="images/people/14.jpg" />
-                    <div class="member-info">
-                        <h5>Christopher</h5>
-                        <p><strong>Cleaner</strong></p>
-                        <div class="member-info-align">
-                            <p><strong>Mid Company</strong></p>
-                            <p>P200 N 17th St</p>
-                            <p>McAllen, TX 78501<p>
-                        </div>
-                        <div class="member-email">
-                            <a href="mailto:dongchul.kim@utrgv.edu" target="_top">Email Dr. Dongchul Kim</a>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
+       <?php
+        $result = $dbname->getData();
+        while($row = mysqli_fetch_assoc($result)){
+        if($row['service_location'] == 'pharr'){
+        workerslist($row['worker_id'], $row['worker_name'], $row['worker_email'], $row['service_type'], $row['worker_img'], $row['appointment_date'], $row['service_location'], $row['service_quality'], $row['worker_active']);  
+    }
+}      
+       ?>
 
         <span id="Plumbing-Edinburg" type="hidden"></span>
         <div class="pg-title sub-title">
