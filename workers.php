@@ -1,3 +1,13 @@
+<?php
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
+?>
+
+<?php require_once("db_connect.php");?>
+<?php require_once("db.php");?>
+<?php require_once("workerslist.php");?>
+<?php $dbname = new CreateDb("shopping6333","workerstb");?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -70,7 +80,7 @@
             <h2 class="display-4"> Cleaning - Edinburg </h2>
 
         </div> 
-
+<!--
         <div class="workers" style="padding-top: 0;">          
             <div class="group">
 
@@ -216,6 +226,16 @@
 
             </div>
         </div>
+    -->
+
+     <?php
+        $result = $dbname->getData();
+        while($row = mysqli_fetch_assoc($result)){
+            workerslist($row['worker_id'], $row['worker_name'], $row['service_type'], $row['worker_img'], $row['appointment_date'], $row['service_location'], $row['service_quality'], $row['worker_active']);  
+        }
+   ?>
+
+
 
         <span id="Cleaning-Pharr" type="hidden"></span>
         <div class="pg-title sub-title" style="margin-top: -60px;">
