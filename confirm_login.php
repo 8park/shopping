@@ -22,7 +22,7 @@ $flag = 0;
     if ($flag < 1) {
        // $password = md5($password);      //Breaks password check
 
-        $query = "SELECT * FROM customertb WHERE username='$username' AND password='$password' ";
+        $query = "SELECT * FROM customertb WHERE username='$username' AND user_password='$password' ";
 
         $results = mysqli_query($success, $query);
         

@@ -47,7 +47,7 @@
         
        // $password = md5($password);//encrypt the password before saving
 
-        $sql = "INSERT INTO `customertb` (`id`, `username`, `email`, `password`, `user_level` ) VALUES ('', '$username', '$email', '$password', '')";
+        $sql = "INSERT INTO `customertb` (`id`, `username`, `email`, `user_password`, `user_level` ) VALUES ('', '$username', '$email', '$password', '')";
         if(mysqli_query($success, $sql)){
             
         }else{
