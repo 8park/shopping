@@ -70,6 +70,7 @@ class CreateDb
             $sql = "CREATE TABLE `workerstb` (
                 `worker_id` int NOT NULL,
                 `worker_name` varchar(10) COLLATE utf8mb4_general_ci DEFAULT NULL,
+                `worker_email` varchar(25) COLLATE utf8mb4_general_ci DEFAULT NULL,
                 `service_type` varchar(10) COLLATE utf8mb4_general_ci DEFAULT NULL,
                 `worker_img` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci DEFAULT NULL,
                 `appointment_date` date DEFAULT NULL,

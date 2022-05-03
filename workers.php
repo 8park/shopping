@@ -80,164 +80,16 @@ error_reporting(E_ALL);
             <h2 class="display-4"> Cleaning - Edinburg </h2>
 
         </div> 
-<!--
-        <div class="workers" style="padding-top: 0;">          
-            <div class="group">
 
-                <div style="width: 100%;">
-                    <span id="start" type="hidden"></span>
-                </div>
-
-                <div data-aos="zoom-in-up" class="member">
-                    <img src="images/people/1.jpg" />
-                    <div class="member-info">
-                        <h5>James</h5>
-                        <p><strong>Best Cleaner</strong></p>
-                        <div class="member-info-align">
-                            <p><strong>Cleaner</strong></p>
-                            <p><strong>Dept. of Ash Cleaning Service</strong></p>
-                            <p>2409 S 18th Ave</p>
-                            <p>Edinburg, TX 78539</p>
-                        </div>
-                        <div class="member-email">
-                            <a href="mailto:belinda.alvarado02@utrgv.edu" target="_top">Email Belinda Alvarado</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div data-aos="zoom-in-up" class="member">
-                    <img src="images/people/2.jpg" />
-                    <div class="member-info">
-                        <h5>Robert</h5>
-                        <p><strong>Fast Cleaner</strong></p>
-                        <div class="member-info-align">
-                            <p><strong>Cleaner</strong></p>
-                            <p><strong>Liga Clean Company</strong></p>
-                            <p>2109 E 15th Ave</p>
-                            <p>Edinburg, TX 78494</p>
-                        </div>
-                        <div class="member-email">
-                            <a href="mailto:daniel.castillo03@utrgv.edu" target="_top">Email Daniel Castillo</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div data-aos="zoom-in-up" class="member">
-                    <img src="images/people/3.jpg" />
-                    <div class="member-info">
-                        <h5>John</h5>
-                        <p><strong>Perfect Cleaner</strong></p>
-                        <div class="member-info-align">
-                            <p><strong>Cleaner</strong></p>
-                            <p><strong>Eigo Company</strong></p>
-                            <p>4092 U 14th Bve</p>
-                            <p>Edinburg, TX 75843</p>
-                        </div>
-                        <div class="member-email">
-                            <a href="mailto:jose.r.espinoza01@utrgv.edu" target="_top">Email Jose Espinoza</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div id=10 data-aos="zoom-in-up" class="member">
-                    <img src="images/people/4.jpg" />
-                    <div class="member-info">
-                        <h5>Mary</h5>
-                        <p><strong>Excellent Cleaner</strong></p>
-                        <div class="member-info-align">
-                            <p><strong>Cleaner</strong></p>
-                            <p><strong>Oeit Company</strong></p>
-                            <p>4838 E 12th Ie</p>
-                            <p>Edinburg, TX 78342</p>
-                        </div>
-                        <div class="member-email">
-                            <a href="mailto:joselito.guardado01@utrgv.edu" target="_top">Email Joselito Guardado</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div data-aos="zoom-in-up" class="member">
-                    <img src="images/people/5.jpg" />
-                    <div class="member-info">
-                        <h5>Patricia</h5>
-                        <p><strong>Brillant Cleaner</strong></p>
-                        <div class="member-info-align">
-                         <p><strong>Cleaner</strong></p>
-                            <p><strong>Qie Company</strong></p>
-                            <p>5849 Q 49th Te</p>
-                            <p>Edinburg, TX 78120</p>
-                        </div>
-                        <div class="member-email">
-                            <a href="mailto:mdashraful.islam01@utrgv.edu" target="_top">Email Md Ashraful Islam</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div data-aos="zoom-in-up" class="member">
-                    <img src="images/people/6.jpg" />
-                    <div class="member-info">
-                        <h5>Jennifer</h5>
-                        <p><strong>Cleaner</strong></p>
-                         <div class="member-info-align">
-                            <p><strong>Cleaner</strong></p>
-                            <p><strong>Wing Company</strong></p>
-                            <p>8594 E 14th Le</p>
-                            <p>Edinburg, TX 78409</p>
-                        </div>
-                        <div class="member-email">
-                            <a href="mailto:christian.narcia01@utrgv.edu" target="_top">Email Christian Narcia</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div data-aos="zoom-in-up" class="member">
-                    <img src="images/people/7.jpg" />
-                    <div class="member-info">
-                        <h5>Michael</h5>
-                        <p><strong>Cleaner</strong></p>
-                        <div class="member-info-align">
-                            <p><strong>Cleaner</strong></p>
-                            <p><strong>Qie Company</strong></p>
-                            <p>5738 I 23th Le</p>
-                            <p>Edinburg, TX 78302</p>
-                        </div>
-                        <div class="member-email">
-                            <a href="mailto:junseong.park01@utrgv.edu" target="_top">Email Junseong Park</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div data-aos="zoom-in-up" class="member">
-                    <img src="images/people/8.jpg" />
-                    <div class="member-info">
-                        <h5>William</h5>
-                        <p><strong>Cleaner</strong></p>
-                        <div class="member-info-align">
-
-                        </div>
-                        <div class="member-email">
-                            <a href="mailto:angel.peredo01@utrgv.edu" target="_top">Email Angel Peredo</a>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    -->
-
-    <div data-aos="zoom-in-up" class="member">
-
-
-
-    </div>
-
+                
      <?php
         $result = $dbname->getData();
         while($row = mysqli_fetch_assoc($result)){
-            workerslist($row['worker_id'], $row['worker_name'], $row['service_type'], $row['worker_img'], $row['appointment_date'], $row['service_location'], $row['service_quality'], $row['worker_active']);  
+            if($row['service_location'] == 'edinburg'){
+            workerslist($row['worker_id'], $row['worker_name'], $row['worker_email'], $row['service_type'], $row['worker_img'], $row['appointment_date'], $row['service_location'], $row['service_quality'], $row['worker_active']);  
         }
+    }
    ?>
-
 
 
         <span id="Cleaning-Pharr" type="hidden"></span>
