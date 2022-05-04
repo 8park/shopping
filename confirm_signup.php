@@ -7,6 +7,7 @@
     $username = $_POST["username"];
     $password = $_POST["password"];
     $password2 = $_POST["password_2"];
+    $address = $_POST["user_address"];
     $flag = 0;
  
 
@@ -47,7 +48,7 @@
         
        // $password = md5($password);//encrypt the password before saving
 
-        $sql = "INSERT INTO `customertb` (`id`, `username`, `email`, `user_password`, `user_level` ) VALUES ('', '$username', '$email', '$password', '')";
+        $sql = "INSERT INTO `customertb`(`id`, `username`, `user_password`, `email`, `user_address`, `user_level`) VALUES ('','$username','$password','$email','$address','')";
         if(mysqli_query($success, $sql)){
             
         }else{

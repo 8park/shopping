@@ -31,6 +31,10 @@
             <label>Confirm Password</label>
   	            <input type="password" name="password_2" placeholder="Re-enter Password:">
             </div>
+            <div class="inputContainer">
+                <label>Enter Address: </label>
+                <input type="text" name="user_address" placeholder="Enter Home Address:"></label>
+            </div>
            <!-- <button type="submit" class="btn" name="reg_user">Register</button></br> -->
             <input type ="submit" value="Register" class="btn">
 
