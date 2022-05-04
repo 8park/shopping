@@ -86,7 +86,7 @@ error_reporting(E_ALL);
         $result = $dbname->getData();
         while($row = mysqli_fetch_assoc($result)){
             if($row['service_location'] == 'edinburg' && $row['service_type'] == 'cleaning'){
-            workerslist($row['worker_id'], $row['worker_name'], $row['worker_email'], $row['service_type'], $row['worker_img'], $row['appointment_date'], $row['service_location'], $row['service_quality'], $row['worker_active']);  
+            workerslist($row['worker_id'], $row['worker_name'], $row['worker_email'], $row['service_type'], $row['worker_img'], $row['appointment_date'], $row['service_location'], $row['service_quality'], $row['price'], $row['worker_active']);  
         }
     }
    ?>
@@ -101,7 +101,7 @@ error_reporting(E_ALL);
         $result = $dbname->getData();
         while($row = mysqli_fetch_assoc($result)){
         if($row['service_location'] == 'pharr' && $row['service_type'] == 'cleaning'){
-        workerslist($row['worker_id'], $row['worker_name'], $row['worker_email'], $row['service_type'], $row['worker_img'], $row['appointment_date'], $row['service_location'], $row['service_quality'], $row['worker_active']);  
+        workerslist($row['worker_id'], $row['worker_name'], $row['worker_email'], $row['service_type'], $row['worker_img'], $row['appointment_date'], $row['service_location'], $row['service_quality'], $row['price'], $row['worker_active']);  
     }
 }      
        ?>
@@ -115,7 +115,7 @@ error_reporting(E_ALL);
         $result = $dbname->getData();
         while($row = mysqli_fetch_assoc($result)){
         if($row['service_location'] == 'edinburg' && $row['service_type'] == 'plumbing'){
-        workerslist($row['worker_id'], $row['worker_name'], $row['worker_email'], $row['service_type'], $row['worker_img'], $row['appointment_date'], $row['service_location'], $row['service_quality'], $row['worker_active']);  
+        workerslist($row['worker_id'], $row['worker_name'], $row['worker_email'], $row['service_type'], $row['worker_img'], $row['appointment_date'], $row['service_location'], $row['service_quality'], $row['price'], $row['worker_active']);  
     }
 }      
        ?>
@@ -130,7 +130,7 @@ error_reporting(E_ALL);
         $result = $dbname->getData();
         while($row = mysqli_fetch_assoc($result)){
         if($row['service_location'] == 'pharr' && $row['service_type'] == 'plumbing'){
-        workerslist($row['worker_id'], $row['worker_name'], $row['worker_email'], $row['service_type'], $row['worker_img'], $row['appointment_date'], $row['service_location'], $row['service_quality'], $row['worker_active']);  
+        workerslist($row['worker_id'], $row['worker_name'], $row['worker_email'], $row['service_type'], $row['worker_img'], $row['appointment_date'], $row['service_location'], $row['service_quality'], $row['price'], $row['worker_active']);  
     }
 }      
        ?>
@@ -146,7 +146,7 @@ error_reporting(E_ALL);
         $result = $dbname->getData();
         while($row = mysqli_fetch_assoc($result)){
         if($row['service_location'] == 'mcallen' && $row['service_type'] == 'plumbing'){
-        workerslist($row['worker_id'], $row['worker_name'], $row['worker_email'], $row['service_type'], $row['worker_img'], $row['appointment_date'], $row['service_location'], $row['service_quality'], $row['worker_active']);  
+        workerslist($row['worker_id'], $row['worker_name'], $row['worker_email'], $row['service_type'], $row['worker_img'], $row['appointment_date'], $row['service_location'], $row['service_quality'], $row['price'], $row['worker_active']);  
     }
 }      
        ?>
@@ -160,7 +160,7 @@ error_reporting(E_ALL);
         $result = $dbname->getData();
         while($row = mysqli_fetch_assoc($result)){
         if($row['service_location'] == 'edinburg' && $row['service_type'] == 'electrical'){
-        workerslist($row['worker_id'], $row['worker_name'], $row['worker_email'], $row['service_type'], $row['worker_img'], $row['appointment_date'], $row['service_location'], $row['service_quality'], $row['worker_active']);  
+        workerslist($row['worker_id'], $row['worker_name'], $row['worker_email'], $row['service_type'], $row['worker_img'], $row['appointment_date'], $row['service_location'], $row['service_quality'], $row['price'], $row['worker_active']);  
     }
 }      
        ?>
@@ -174,7 +174,7 @@ error_reporting(E_ALL);
         $result = $dbname->getData();
         while($row = mysqli_fetch_assoc($result)){
         if($row['service_location'] == 'pharr' && $row['service_type'] == 'electrical'){
-        workerslist($row['worker_id'], $row['worker_name'], $row['worker_email'], $row['service_type'], $row['worker_img'], $row['appointment_date'], $row['service_location'], $row['service_quality'], $row['worker_active']);  
+        workerslist($row['worker_id'], $row['worker_name'], $row['worker_email'], $row['service_type'], $row['worker_img'], $row['appointment_date'], $row['service_location'], $row['service_quality'], $row['price'], $row['worker_active']);  
     }
 }      
        ?>
@@ -188,7 +188,7 @@ error_reporting(E_ALL);
         $result = $dbname->getData();
         while($row = mysqli_fetch_assoc($result)){
         if($row['service_location'] == 'mcallen' && $row['service_type'] == 'electrical'){
-        workerslist($row['worker_id'], $row['worker_name'], $row['worker_email'], $row['service_type'], $row['worker_img'], $row['appointment_date'], $row['service_location'], $row['service_quality'], $row['worker_active']);  
+        workerslist($row['worker_id'], $row['worker_name'], $row['worker_email'], $row['service_type'], $row['worker_img'], $row['appointment_date'], $row['service_location'], $row['service_quality'], $row['price'], $row['worker_active']);  
     }
 }      
        ?>
@@ -202,7 +202,7 @@ error_reporting(E_ALL);
         $result = $dbname->getData();
         while($row = mysqli_fetch_assoc($result)){
         if($row['service_location'] == 'edinburg' && $row['service_type'] == 'moving'){
-        workerslist($row['worker_id'], $row['worker_name'], $row['worker_email'], $row['service_type'], $row['worker_img'], $row['appointment_date'], $row['service_location'], $row['service_quality'], $row['worker_active']);  
+        workerslist($row['worker_id'], $row['worker_name'], $row['worker_email'], $row['service_type'], $row['worker_img'], $row['appointment_date'], $row['service_location'], $row['service_quality'], $row['price'], $row['worker_active']);  
     }
 }      
        ?>
@@ -216,7 +216,7 @@ error_reporting(E_ALL);
         $result = $dbname->getData();
         while($row = mysqli_fetch_assoc($result)){
         if($row['service_location'] == 'pharr' && $row['service_type'] == 'moving'){
-        workerslist($row['worker_id'], $row['worker_name'], $row['worker_email'], $row['service_type'], $row['worker_img'], $row['appointment_date'], $row['service_location'], $row['service_quality'], $row['worker_active']);  
+        workerslist($row['worker_id'], $row['worker_name'], $row['worker_email'], $row['service_type'], $row['worker_img'], $row['appointment_date'], $row['service_location'], $row['service_quality'], $row['price'], $row['worker_active']);  
     }
 }      
        ?>
@@ -230,7 +230,7 @@ error_reporting(E_ALL);
         $result = $dbname->getData();
         while($row = mysqli_fetch_assoc($result)){
         if($row['service_location'] == 'mcallen' && $row['service_type'] == 'moving'){
-        workerslist($row['worker_id'], $row['worker_name'], $row['worker_email'], $row['service_type'], $row['worker_img'], $row['appointment_date'], $row['service_location'], $row['service_quality'], $row['worker_active']);  
+        workerslist($row['worker_id'], $row['worker_name'], $row['worker_email'], $row['service_type'], $row['worker_img'], $row['appointment_date'], $row['service_location'], $row['service_quality'], $row['price'], $row['worker_active']);  
     }
 }      
        ?>

@@ -47,7 +47,7 @@ class CreateDb
                 echo "Error creating table : " . mysqli_error($this->con);
             }
 
-            $sql = "CREATE TABLE `servicestb` (
+            $sql = "CREATE TABLE IF NOT EXISTS `servicestb` (
                 `id` int NOT NULL,
                 `services_name` varchar(25) NOT NULL,
                 `services_price` float DEFAULT NULL,
@@ -58,27 +58,23 @@ class CreateDb
              if (!mysqli_query($this->con, $sql)){
                 echo "Error creating table : " . mysqli_error($this->con);
             }
-            $sql = "CREATE TABLE `workerstb` (
+           
+            
+            $sql = "CREATE TABLE IF NOT EXISTS `workerstb` (
                 `worker_id` int NOT NULL,
                 `worker_name` varchar(10) COLLATE utf8mb4_general_ci DEFAULT NULL,
-                `worker_img` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci DEFAULT NULL,
-                `appointment_date` date DEFAULT NULL,
-                `service_location` varchar(10) COLLATE utf8mb4_general_ci NOT NULL,
-                `service_quality` int DEFAULT NULL,
-                `worker_active` int NOT NULL
-              ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;";
-            $sql = "CREATE TABLE `workerstb` (
-                `worker_id` int NOT NULL,
-                `worker_name` varchar(10) COLLATE utf8mb4_general_ci DEFAULT NULL,
-                `worker_email` varchar(25) COLLATE utf8mb4_general_ci DEFAULT NULL,
+                `worker_email` varchar(20) COLLATE utf8mb4_general_ci DEFAULT NULL,
                 `service_type` varchar(10) COLLATE utf8mb4_general_ci DEFAULT NULL,
                 `worker_img` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci DEFAULT NULL,
                 `appointment_date` date DEFAULT NULL,
                 `service_location` varchar(10) COLLATE utf8mb4_general_ci NOT NULL,
                 `service_quality` int DEFAULT NULL,
+                `price` int NOT NULL,
                 `worker_active` int NOT NULL
-              ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
-              ";      
+              ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;";
+              if (!mysqli_query($this->con, $sql)){
+                    echo "Error creating table : " . mysqli_error($this->con);
+                 }    
         }else{
             return false;
         }
