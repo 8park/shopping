@@ -43,7 +43,7 @@ $flag = 0;
             }
             else{
               */
-              echo "<script> location.href='index.html'; </script>";
+              echo "<script> location.href='index2.html'; </script>";
             //}
           
         }else {
