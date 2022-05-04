@@ -10,8 +10,8 @@ function workerslist($worker_id, $worker_name, $worker_email, $service_type, $wo
         <h5> '. $worker_name .' </h5>
         <p><strong> '. $service_type .'</strong></p>
        <p> '. $worker_email .'<p>
-       <button type="submit" class="btn btn btn-success"name="hire">Hire for $'. $price .' <i class =""></i></button>
-    </div>
+       <input type="submit" class="btn btn btn-success" name="price" value= '. $price .' />
+       </div>
 </div>
 </div>
 </div>

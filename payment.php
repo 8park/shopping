@@ -4,11 +4,16 @@
 
 <?php
     require_once 'db_connect.php';
-    $total =  $_POST["hire"];
+    require_once 'db.php';
+    require_once 'workerslist.php';
+    $price =  $_POST["price"];
+
+
+    //$price = ($price + (int)$row['price']);
+
 
 ?>
-    <hr><h6>$<span id = total><?php echo number_format($total, 2); ?></span></h6>
-
+    <hr><p class="ex2">$<span id = price><?php echo number_format($price, 2); ?></span></p></hr>
 <div id="paypal-button-container">
                 <!-- Button Placement-->
             </div>
@@ -24,7 +29,7 @@ paypal.Buttons({
         purchase_units: [{
           amount:
           {
-            value: document.getElementById("total").innerHTML
+            value: document.getElementById("price").innerHTML
           }
         }]
       });
