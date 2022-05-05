@@ -59,8 +59,18 @@
                       <a class="nav-link" href="index.html">Home</a>
                   </li>
                   <li class="nav-item">
-                      <a class="nav-link" href="allservice.html" id="current">All Services</a>
+                      <a class="nav-link" href="date.php">Find Worker to date </a>
+                  <li class="nav-item">
+                      <a class="nav-link" href="allservice.html">All Services</a>
                   </li>
+                  <li class="nav-item">
+                      <a id="people-link" class="nav-link" href="location.php">Location</a>
+                      <div id="drop-down">
+                           <a class="nav-link" href="location.php#Cleaing-Edinburg">Edinburg</a>
+                           <a class="nav-link" href="location.php#Cleaning-Pharr">Pharr</a>
+                           <a class="nav-link" href="location.php#Plumbing-Mcallen">Mcallen</a>
+                        </div>
+                    </li>
                   <li class="nav-item">
                       <a id="people-link" class="nav-link" href="workers.php">workers</a>
                       <div id="drop-down">

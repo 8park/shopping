@@ -49,7 +49,7 @@ error_reporting(E_ALL);
                   <li class="nav-item">
                       <a class="nav-link" href="allservice.html">All Services</a>
                   </li>
-                  <li class="nav-item">
+                   <li class="nav-item">
                       <a id="people-link" class="nav-link" href="location.php">Location</a>
                       <div id="drop-down">
                            <a class="nav-link" href="location.php#Cleaing-Edinburg">Edinburg</a>
@@ -100,6 +100,50 @@ error_reporting(E_ALL);
         }
     }
    ?>
+   
+        <span id="Plumbing-Edinburg" type="hidden"></span>
+        <div class="pg-title sub-title">
+            <h2 class="display-4"> Plumbing - Edinburg </h2>
+        </div>
+
+        <?php
+        $result = $dbname->getData();
+        while($row = mysqli_fetch_assoc($result)){
+        if($row['service_location'] == 'edinburg' && $row['service_type'] == 'plumbing'){
+        workerslist($row['worker_id'], $row['worker_name'], $row['worker_email'], $row['service_type'], $row['worker_img'], $row['appointment_date'], $row['service_location'], $row['service_quality'], $row['price'], $row['worker_active']);  
+    }
+}      
+       ?>
+
+         <span id="Electrical-Edinburg" type="hidden"></span>
+        <div class="pg-title sub-title">
+            <h2 class="dispay-4"> Electrical - Edinburg </h2>
+        </div>
+
+        <?php
+        $result = $dbname->getData();
+        while($row = mysqli_fetch_assoc($result)){
+        if($row['service_location'] == 'edinburg' && $row['service_type'] == 'electrical'){
+        workerslist($row['worker_id'], $row['worker_name'], $row['worker_email'], $row['service_type'], $row['worker_img'], $row['appointment_date'], $row['service_location'], $row['service_quality'], $row['price'], $row['worker_active']);  
+    }
+}      
+       ?>
+
+
+       
+        <span id="Moving-Edinburg" type="hidden"></span>
+        <div class="pg-title sub-title">
+            <h2 class="dispay-4"> Moving - Edinburg </h2>
+        </div>
+
+        <?php
+        $result = $dbname->getData();
+        while($row = mysqli_fetch_assoc($result)){
+        if($row['service_location'] == 'edinburg' && $row['service_type'] == 'moving'){
+        workerslist($row['worker_id'], $row['worker_name'], $row['worker_email'], $row['service_type'], $row['worker_img'], $row['appointment_date'], $row['service_location'], $row['service_quality'], $row['price'], $row['worker_active']);  
+    }
+}      
+       ?>
 
 
         <span id="Cleaning-Pharr" type="hidden"></span>
@@ -116,19 +160,6 @@ error_reporting(E_ALL);
 }      
        ?>
 
-        <span id="Plumbing-Edinburg" type="hidden"></span>
-        <div class="pg-title sub-title">
-            <h2 class="display-4"> Plumbing - Edinburg </h2>
-        </div>
-
-        <?php
-        $result = $dbname->getData();
-        while($row = mysqli_fetch_assoc($result)){
-        if($row['service_location'] == 'edinburg' && $row['service_type'] == 'plumbing'){
-        workerslist($row['worker_id'], $row['worker_name'], $row['worker_email'], $row['service_type'], $row['worker_img'], $row['appointment_date'], $row['service_location'], $row['service_quality'], $row['price'], $row['worker_active']);  
-    }
-}      
-       ?>
 
      
 
@@ -144,6 +175,38 @@ error_reporting(E_ALL);
     }
 }      
        ?>
+
+       
+
+        <span id="Electrical-Pharr" type="hidden"></span>
+        <div class="pg-title sub-title">
+            <h2 class="dispay-4"> Electrical - Pharr </h2>
+        </div>
+
+        <?php
+        $result = $dbname->getData();
+        while($row = mysqli_fetch_assoc($result)){
+        if($row['service_location'] == 'pharr' && $row['service_type'] == 'electrical'){
+        workerslist($row['worker_id'], $row['worker_name'], $row['worker_email'], $row['service_type'], $row['worker_img'], $row['appointment_date'], $row['service_location'], $row['service_quality'], $row['price'], $row['worker_active']);  
+    }
+}      
+       ?>
+
+       
+        <span id="Moving-Pharr" type="hidden"></span>
+        <div class="pg-title sub-title">
+            <h2 class="dispay-4"> Moving - Pharr </h2>
+        </div>
+
+        <?php
+        $result = $dbname->getData();
+        while($row = mysqli_fetch_assoc($result)){
+        if($row['service_location'] == 'pharr' && $row['service_type'] == 'moving'){
+        workerslist($row['worker_id'], $row['worker_name'], $row['worker_email'], $row['service_type'], $row['worker_img'], $row['appointment_date'], $row['service_location'], $row['service_quality'], $row['price'], $row['worker_active']);  
+    }
+}      
+       ?>
+
 
 
 
@@ -161,33 +224,6 @@ error_reporting(E_ALL);
 }      
        ?>
 
-        <span id="Electrical-Edinburg" type="hidden"></span>
-        <div class="pg-title sub-title">
-            <h2 class="dispay-4"> Electrical - Edinburg </h2>
-        </div>
-
-        <?php
-        $result = $dbname->getData();
-        while($row = mysqli_fetch_assoc($result)){
-        if($row['service_location'] == 'edinburg' && $row['service_type'] == 'electrical'){
-        workerslist($row['worker_id'], $row['worker_name'], $row['worker_email'], $row['service_type'], $row['worker_img'], $row['appointment_date'], $row['service_location'], $row['service_quality'], $row['price'], $row['worker_active']);  
-    }
-}      
-       ?>
-
-        <span id="Electrical-Pharr" type="hidden"></span>
-        <div class="pg-title sub-title">
-            <h2 class="dispay-4"> Electrical - Pharr </h2>
-        </div>
-
-        <?php
-        $result = $dbname->getData();
-        while($row = mysqli_fetch_assoc($result)){
-        if($row['service_location'] == 'pharr' && $row['service_type'] == 'electrical'){
-        workerslist($row['worker_id'], $row['worker_name'], $row['worker_email'], $row['service_type'], $row['worker_img'], $row['appointment_date'], $row['service_location'], $row['service_quality'], $row['price'], $row['worker_active']);  
-    }
-}      
-       ?>
 
         <span id="Electrical-Mcallen" type="hidden"></span>
         <div class="pg-title sub-title">
@@ -198,34 +234,6 @@ error_reporting(E_ALL);
         $result = $dbname->getData();
         while($row = mysqli_fetch_assoc($result)){
         if($row['service_location'] == 'mcallen' && $row['service_type'] == 'electrical'){
-        workerslist($row['worker_id'], $row['worker_name'], $row['worker_email'], $row['service_type'], $row['worker_img'], $row['appointment_date'], $row['service_location'], $row['service_quality'], $row['price'], $row['worker_active']);  
-    }
-}      
-       ?>
-
-        <span id="Moving-Edinburg" type="hidden"></span>
-        <div class="pg-title sub-title">
-            <h2 class="dispay-4"> Moving - Edinburg </h2>
-        </div>
-
-        <?php
-        $result = $dbname->getData();
-        while($row = mysqli_fetch_assoc($result)){
-        if($row['service_location'] == 'edinburg' && $row['service_type'] == 'moving'){
-        workerslist($row['worker_id'], $row['worker_name'], $row['worker_email'], $row['service_type'], $row['worker_img'], $row['appointment_date'], $row['service_location'], $row['service_quality'], $row['price'], $row['worker_active']);  
-    }
-}      
-       ?>
-
-        <span id="Moving-Pharr" type="hidden"></span>
-        <div class="pg-title sub-title">
-            <h2 class="dispay-4"> Moving - Pharr </h2>
-        </div>
-
-        <?php
-        $result = $dbname->getData();
-        while($row = mysqli_fetch_assoc($result)){
-        if($row['service_location'] == 'pharr' && $row['service_type'] == 'moving'){
         workerslist($row['worker_id'], $row['worker_name'], $row['worker_email'], $row['service_type'], $row['worker_img'], $row['appointment_date'], $row['service_location'], $row['service_quality'], $row['price'], $row['worker_active']);  
     }
 }      
