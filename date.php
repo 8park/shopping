@@ -15,12 +15,6 @@
         <input type="date" id="date" name="date">
         <input type="submit">
     </form>
-        </div>
-            <p>
-                Need an account? <a href="check_date.php">Sign up</a></br>
-            </p>
-
-    </div>
 
 </br>
 </body>

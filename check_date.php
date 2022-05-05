@@ -25,7 +25,7 @@
 */
 
     if($flag < 1){
-        echo'<h1> Workers available on that date</h1>';
+        echo'<h1> Workers available on '. $date .'</h1>';
 
 
         $result = $dbname->getData();
